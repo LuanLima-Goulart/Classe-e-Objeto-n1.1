@@ -2,7 +2,7 @@ public class Porta_Luan {
     //atributos
     public String modelo;
     public String cor;
-    protected String material;
+    private String material;
     protected float largura;
     protected boolean chave;
 
@@ -34,5 +34,12 @@ public class Porta_Luan {
         }
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Material: " + this.material);
+    }
+    public String pegarMaterial() {
+        return this.material;
+    }
+
+    public void defMaterial(String material) {
+        this.material = material;
     }
 }

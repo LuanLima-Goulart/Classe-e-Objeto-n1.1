@@ -4,7 +4,7 @@ public class Main_Luan_Porta {
 
         portaFerroNegro.cor = "Preta";
         portaFerroNegro.modelo = "Bruesky";
-        portaFerroNegro.material = "Ferro Negro";
+        portaFerroNegro.defMaterial = "Ferro Negro";
         portaFerroNegro.largura = 25.0f;
         portaFerroNegro.chave = true;
 
