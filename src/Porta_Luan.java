@@ -1,13 +1,13 @@
 public class Porta_Luan {
     //atributos
-    String modelo;
-    String cor;
-    String material;
-    float largura;
-    boolean chave;
+    public String modelo;
+    public String cor;
+    protected String material;
+    protected float largura;
+    protected boolean chave;
 
     //metodos
-    void abrirPorta(){
+    public void abrirPorta(){
         if(this.chave == true){
             System.out.println("Não pode abrir a porta sem a chave!");
         } else {
@@ -17,15 +17,15 @@ public class Porta_Luan {
         }
     }
 
-    void trancada(){
+    public void trancada(){
         this.chave = true;
     }
 
-    void aberta(){
+    public void aberta(){
         this.chave = false;
     }
 
-    void status(){
+    public void status(){
         System.out.println("Uma porta " + cor);
         if(this.chave == true){
             System.out.println("A porta está trancada!");
